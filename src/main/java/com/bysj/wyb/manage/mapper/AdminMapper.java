@@ -19,4 +19,10 @@ public interface AdminMapper {
     List<Student> findClassNumber();
 
     int delUser(String table,String uid);
+
+    List<Student> findStudentByKey(String key);
+
+    int createNewStudent(Student student);
+
+    int createNewTeacher(Teacher teacher);
 }

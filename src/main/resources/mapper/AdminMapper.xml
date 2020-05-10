@@ -20,4 +20,16 @@
     <update id="delUser" parameterType="string">
         update ${table} set  isdelete=1  where uid=#{uid}
     </update>
+
+    <select id="findStudentByKey" resultType="com.bysj.wyb.manage.entity.Student">
+        select * from pd_student where concat(name,nickname) like "%"#{key}"%"
+    </select>
+
+    <insert id="createNewStudent" parameterType="com.bysj.wyb.manage.entity.Student">
+        insert into pd_student set uid=#{uid},nickname=#{nickName},password=#{password},name=#{name},sex=#{name},classnumber=#{classNumber}
+    </insert>
+
+    <insert id="createNewTeacher" parameterType="com.bysj.wyb.manage.entity.Teacher">
+        insert into pd_teacher set uid=#{uid},name=#{name},sex=#{sex},password=#{password}
+    </insert>
 </mapper>

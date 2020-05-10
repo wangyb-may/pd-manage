@@ -86,6 +86,23 @@
             <version>1.18</version>
         </dependency>
 
+        <!--poi控制excel的导入导出-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.10</version>
+        </dependency>
+
 
         <!--mybatis注入依赖-->
         <dependency>
