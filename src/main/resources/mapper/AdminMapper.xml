@@ -26,7 +26,7 @@
     </select>
 
     <insert id="createNewStudent" parameterType="com.bysj.wyb.manage.entity.Student">
-        insert into pd_student set uid=#{uid},nickname=#{nickName},password=#{password},name=#{name},sex=#{name},classnumber=#{classNumber}
+        insert into pd_student set uid=#{uid},nickname=#{nickName},password=#{password},name=#{name},sex=#{sex},classnumber=#{classNumber}
     </insert>
 
     <insert id="createNewTeacher" parameterType="com.bysj.wyb.manage.entity.Teacher">

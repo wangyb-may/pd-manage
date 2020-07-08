@@ -143,7 +143,7 @@ public class AdminServiceImpl implements AdminService {
                 student.setName(getCellStringValue(row.getCell(1)));
                 //性别
                 student.setSex(getCellStringValue(row.getCell(2)));
-                //单位
+                //班级
                 student.setClassNumber(getCellStringValue(row.getCell(3)));
                 //uid
                 String strNow=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()).replaceAll("-","").replaceAll(":","").replaceAll(" ","");
