@@ -19,8 +19,17 @@ public interface AdminService {
 
     Result delUser(String table,String uid);
 
+    /**
+     * 搜索
+     * @param key
+     * @return
+     */
     Result findStudentListByKey(String key);
 
+    /**
+     * 创建账号导入模板
+     * @return
+     */
     XSSFWorkbook createVoidExcelModel();
 
     Result createNewStudent(MultipartFile file,boolean low2007);

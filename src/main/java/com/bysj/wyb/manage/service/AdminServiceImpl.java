@@ -193,6 +193,11 @@ public class AdminServiceImpl implements AdminService {
 
     }
 
+    /**
+     * 获取单元格内数据类型并转换
+     * @param cell
+     * @return
+     */
     public String getCellStringValue(Cell cell) {
         String cellValue = "";
         switch (cell.getCellType()) {
